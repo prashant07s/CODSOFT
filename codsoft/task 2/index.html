@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  
+
+
+</head>
+<body data-theme="light">
+  <div class="calculator">
+    <input type="text" class="display" id="display" disabled />
+
+    <div class="buttons">
+      <!-- Scientific Row -->
+      <button onclick="append('Math.PI')">π</button>
+      <button onclick="append('Math.E')">e</button>
+      <button onclick="applyFunction('Math.sqrt')">√</button>
+      <button onclick="power()">x^y</button>
+
+      <button onclick="applyFunction('Math.sin')">sin</button>
+      <button onclick="applyFunction('Math.cos')">cos</button>
+      <button onclick="applyFunction('Math.tan')">tan</button>
+      <button onclick="applyFunction('Math.log10')">log</button>
+
+      <!-- Standard Row -->
+      <button onclick="clearDisplay()">AC</button>
+      <button onclick="deleteLast()">⌫</button>
+      <button onclick="append('%')">%</button>
+      <button onclick="append('/')">/</button>
+
+      <button onclick="append('7')">7</button>
+      <button onclick="append('8')">8</button>
+      <button onclick="append('9')">9</button>
+      <button onclick="append('*')">*</button>
+
+      <button onclick="append('4')">4</button>
+      <button onclick="append('5')">5</button>
+      <button onclick="append('6')">6</button>
+      <button onclick="append('-')">-</button>
+
+      <button onclick="append('1')">1</button>
+      <button onclick="append('2')">2</button>
+      <button onclick="append('3')">3</button>
+      <button onclick="append('+')">+</button>
+
+      <button onclick="append('0')">0</button>
+      <button onclick="append('.')">.</button>
+      <button onclick="calculate()">=</button>
+    </div>
+
+    <div class="toggle-theme">
+
+      
+
+      <button onclick="toggleTheme()">🌗 Theme</button>
+    
+
+  <div class="converter">
+    
+  <h3>🌡️ Celsius ↔Fahrenheit</h3>
+  <div class="row">
+    <input type="number" id="celsius" placeholder="Celsius">
+    <button onclick="convertToFahrenheit()">→ °F</button>
+  </div>
+  <div class="row">
+    <input type="number" id="fahrenheit" placeholder="Fahrenheit">
+    <button onclick="convertToCelsius()">→ °C</button>
+  </div>
+</div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
