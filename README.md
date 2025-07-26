@@ -3,8 +3,8 @@
 This repository contains the project(s) I worked on during my 1-month internship at CodSoft.  
 
 ## Project Details  
-- Intern: Rprahant Singh  
-- Duration: 3 Months   
+- Intern: prahant Singh  
+- Duration: 1 Months   
 - Domain: ( Web Development)  
 - Technologies Used: ( HTML/CSS/JS, React, etc.)  
 
